@@ -14,7 +14,11 @@
         <a-asset-item id="tiger" src="images/tiger/scene.gltf"></a-asset-item>
       </a-assets>
       <a-marker preset="hiro">
-        <a-gltf-model src="#tiger" scale="2.0 2.0 2.0"></a-gltf-model>
+        <a-entity
+          animation-mixer
+          gltf-model="#tiger"
+          scale="2 2 2">
+        </a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
